@@ -4,6 +4,9 @@ import App from './App.vue'
 import router from './router'
 import VueSimpleSVG, {SimpleSVG} from "vue-simple-svg";
 import '@/assets/style.css'
+import axios from 'axios'
+
+Vue.prototype.axios = axios
 
 Vue.config.productionTip = false
 Vue.component('simple-svg', SimpleSVG)

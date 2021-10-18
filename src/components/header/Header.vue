@@ -11,17 +11,6 @@
         <div class="header__logo">
           <img :src="require('@/assets/icon/logo.png')" alt="logo">
         </div>
-        <v-spacer></v-spacer>
-        <div class="hidden-sm-and-down">
-          <div class="d-flex">
-            <router-link v-for="i in navItems" :key="i.name" :to="i.path"
-                         class="header__nav-link d-flex text-decoration-none">
-              <img :src="currentPath.match(i.path) ? require(`@/assets/icon/${i.name}.png`) : require(`@/assets/icon/${i.name}-disabled.png`)" alt="" class="header__nav-icon">
-              <p class="mb-0 d-flex align-center">{{ i.text }}</p>
-            </router-link>
-          </div>
-        </div>
-        <v-spacer></v-spacer>
       </v-col>
     </v-row>
   </v-app-bar>

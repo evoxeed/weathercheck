@@ -98,19 +98,25 @@ body {
 }
 
 .city__item {
+    font-style: normal;
+    font-weight: normal;
     font-size: 14px;
-    font-weight: 400;
+    line-height: 110.7%;
+    text-align: center;
     border-radius: 6px;
     background: var(--itemCityBackgound);
     position: relative;
+    color: white;
 }
 
-/*.city__item svg {*/
-/*    bottom: 20px;*/
-/*}*/
+.city__item-temperature {
+
+}
 
 .city__item h2 {
     font-size: 40px;
+    font-weight: 500;
+    line-height: 110.7%;
 }
 
 .input__wrapper {
@@ -125,13 +131,30 @@ body {
     --input-text: #ffffff;
     --background-input: #30354B;
     background-color: var(--background-input);
-    border-radius: 0  0 6px 6px;
-    width: 100%;
-    top: 136px;
+    border-radius: 0 0 6px 6px;
+    top: 134px;
     max-height: 154px;
     z-index: 150;
     overflow: auto;
+    position: absolute;
+    padding: 0;
+    max-width: 469px;
 }
+
+@media screen and (max-width: 1263px) {
+    .home .input-hints__wrapper {
+        max-width: 351px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .home .input-hints__wrapper {
+        max-width: 935px;
+        top: 73px;
+
+    }
+}
+
 
 .input-hints__item {
     padding: 0 12px;
@@ -139,4 +162,90 @@ body {
 
 .input-hints__item + .input-hints__item {
     padding-top: 16px;
+}
+
+.bg-city {
+    background: radial-gradient(80.36% 80.36% at 50% 0%, #5A607C 0%, #161B30 100%);
+}
+
+.city__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 110.7%;
+
+}
+
+.city__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 110.7%;
+}
+
+.city__temperature {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 129.755px;
+    line-height: 110.7%;
+    background: linear-gradient(180deg, #FFFFFF 11.65%, rgba(255, 255, 255, 0) 139.47%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.city__pressure {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.city__time {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 110.7%;
+    color: #8A91AB;
+}
+
+.city__back {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 110.7%;
+    color: #8A91AB;
+}
+
+.favorite {
+    cursor: pointer;
+}
+
+.home-hint {
+    position: relative;
+    max-width: 194px;
+}
+
+.home-hint-two {
+    max-width: 274px;
+    margin-top: 10vh;
+}
+
+.home-hint p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #8A91AB;
+}
+
+.home-hint__city {
+    color: white;
+    border-bottom: 1px dashed #fff;
+}
+
+.home-hint__arrow {
+    position: absolute;
+    top: 0;
+    left: -31px;
 }
