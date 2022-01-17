@@ -13,7 +13,8 @@
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vue-simple-svg": "^2.0.2",
-    "vuetify": "^v2.5.8"
+    "vuetify": "^v2.5.8",
+    "yarn": "^1.22.17"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

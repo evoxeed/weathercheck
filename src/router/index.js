@@ -33,39 +33,7 @@ const routes = [
 const router = new VueRouter({
   routes,
   linkActiveClass: "header__nav-link--active",
-  mode: 'history',
-  // scrollBehavior(to, from, savedPosition) {
-  //   if (savedPosition) {
-  //     return {
-  //       savedPosition,
-  //       selector: to.hash
-  //     }
-  //   } else {
-  //     const position = {}
-  //
-  //     if (to.hash) {
-  //
-  //       if (to.hash === '#news') {
-  //
-  //         return {
-  //           selector: to.hash,
-  //           offset: {x: 0, y: 50}
-  //         }
-  //       }
-  //
-  //       if (/^#\d/.test(to.hash) || document.querySelector(to.hash)) {
-  //         return {
-  //           position,
-  //           selector: to.hash
-  //         }
-  //       }
-  //
-  //       return false
-  //     }
-  //
-  //     return {x: 0, y: 0}
-  //   }
-  // }
+  mode: 'history'
 })
 
 export default router
